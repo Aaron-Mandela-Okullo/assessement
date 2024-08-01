@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .show{
+        background-color: yellow;
+        color: black;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: medium;
+        align-items: center;
+        
+
+      }
+      .red{
+        background-color: red;
+        color: white;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: medium;
+        align-items: center;
+        
+
+      }
+      .restore{
+        background-color: blue;
+        color: white;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: medium;
+        align-items: center;
+        
+
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <button class="show";onclick="
+    
+      console.log(`item: ${itemQuantity}`);"><b>Show Item-Quantity</b></button>
+
+    <button  class="red",onclick="
+    itemQuantity = itemQuantity   + 1;
+    console.log(`itemQuantity: ${itemQuantity}`);
+    "><b>Add Item-Quantity</b></button>
+
+    <button onclick="
+    itemQuantity +=2;
+    console.log(`itemQuantity: ${itemQuantity}`);"><b>+ 2</b></button>
+
+    <button onclick="
+    itemQuantity +=3;
+    console.log(`itemQuantity: ${itemQuantity}`);"><b>+ 3</b></button>
+
+    <button class="restore",onclick="itemQuantity = 0;
+    console.log('item was restore.');"><b>Restore Item</b></button>
+
+    <script>
+      let itemQuantity= 0;
+      alert("Mandela's Js traial")
+     
+    </script>
+
+  </body>
+
+</html>
